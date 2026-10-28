@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nydorbcd-rewritefidelity"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告查询改写的保真度相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nydorbcd" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nydorbcd.github.io"
+Repository = "https://github.com/nydorbcd/rewritefidelity"
+Issues = "https://github.com/nydorbcd/rewritefidelity/issues"
+
+[project.scripts]
+rewritefidelity = "rewritefidelity:main"
+
+[tool.setuptools]
+py-modules = ["rewritefidelity"]
